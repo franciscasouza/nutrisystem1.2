@@ -117,35 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_Fechar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH5gQLEyUjerzPQgAAAQJJREFU
-        SEu1lssKwjAQRftPgrYu/GJF/0nUnS/cxzMyAyFNH8nUC1fSzMy5paHUJoRwwlfcNQsJVotv+CAXFyx6
-        4VZ7qiUMZYnOsrHC99+lM4TZmPXEm1yhKoSZPNzERnUIveNwE4XiEHrmwU00pAODIdTK4CYaJwfZq4Ob
-        GBgEsPbBTQz2QHgZuAlA/OI8sK0FvtY2nwDFdy3y33ksYFv8FrLqg3da9glQDI8fUdHLmBWATkGi3CHX
-        hzDYg2spPZPyEAYG4Sb26kJonISbqKXvxHgIDbPhJnrSkPwMhRQ++7nSOx7Chu/QEDP5EBZuuInZfgg/
-        f//oH7GELP23BWbYfwGegRc0By5u4wAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btn_Minimizar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH5gQLEycRgF38QAAAANtJREFU
-        SEvtlE0OQTEUhfvWg1gHMTAxkRdDC2IXQmIHDBlYhZjiLYA6t/eW6J8XnfZLvuS1p70ngqdiaK37sIE5
-        7GScD8IZn8lDxvkgswVr2WoN7lR8tRREwJ1PAezBScAlJE5wnnAMK5ltoDU00OLOj1kMZbYB668C4glX
-        jkdInKGbWS+QmMpsA9ZewUOyN9irOYp/B8i2fKQUREBWCgxtfqYH6GaGVMGIoyyuqQL6mAMYeo1Y7Z9x
-        AUN5J1rQBtzb8HVdy5aPHCgFPwtySRbs+czf3GBXxjko9QJ81HvGEnPCWwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btn_Maximizar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH5gQLEyYluPI5tAAAAItJREFU
-        SEvtlTsSgCAMRKk4lJwPP/cErxGTsMhY0IBa5c1swTrzdqzifoGIPOfgnJxZMmfjeOh1YJcvL7NCrwOy
-        KiyohmFHKCrKqLRU8JwGuubD2wZuoLOBPtDZQB/obKAPdDbQB7rHQD04AdUw4igqSqi0lBv6NhF6HZCj
-        LyP1T2ZInMhpR/87nLsAkOuCB/mhgQEAAAAASUVORK5CYII=
-</value>
-  </data>
 </root>
