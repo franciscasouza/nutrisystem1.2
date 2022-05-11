@@ -41,6 +41,7 @@
             this.btn_Receitas = new System.Windows.Forms.Button();
             this.pan_Conteudo = new System.Windows.Forms.Panel();
             this.btn_Inicio = new System.Windows.Forms.Button();
+            this.btn_funcionarios = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pan_Menu.SuspendLayout();
             this.SuspendLayout();
@@ -122,6 +123,7 @@
             // pan_Menu
             // 
             this.pan_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.pan_Menu.Controls.Add(this.btn_funcionarios);
             this.pan_Menu.Controls.Add(this.panel2);
             this.pan_Menu.Controls.Add(this.btn_Financeiro);
             this.pan_Menu.Controls.Add(this.btn_Pacientes);
@@ -155,7 +157,7 @@
             this.btn_Financeiro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Financeiro.ForeColor = System.Drawing.Color.Black;
             this.btn_Financeiro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Financeiro.Location = new System.Drawing.Point(12, 386);
+            this.btn_Financeiro.Location = new System.Drawing.Point(12, 382);
             this.btn_Financeiro.Name = "btn_Financeiro";
             this.btn_Financeiro.Size = new System.Drawing.Size(215, 40);
             this.btn_Financeiro.TabIndex = 6;
@@ -196,7 +198,7 @@
             this.btn_Receitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Receitas.ForeColor = System.Drawing.Color.Black;
             this.btn_Receitas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Receitas.Location = new System.Drawing.Point(12, 432);
+            this.btn_Receitas.Location = new System.Drawing.Point(12, 474);
             this.btn_Receitas.Name = "btn_Receitas";
             this.btn_Receitas.Size = new System.Drawing.Size(215, 40);
             this.btn_Receitas.TabIndex = 10;
@@ -228,6 +230,25 @@
             this.btn_Inicio.TabIndex = 3;
             this.btn_Inicio.Text = "Início";
             this.btn_Inicio.UseVisualStyleBackColor = false;
+            // 
+            // btn_funcionarios
+            // 
+            this.btn_funcionarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(190)))), ((int)(((byte)(175)))));
+            this.btn_funcionarios.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_funcionarios.FlatAppearance.BorderSize = 0;
+            this.btn_funcionarios.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btn_funcionarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(156)))), ((int)(((byte)(106)))));
+            this.btn_funcionarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.btn_funcionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_funcionarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_funcionarios.ForeColor = System.Drawing.Color.Black;
+            this.btn_funcionarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_funcionarios.Location = new System.Drawing.Point(12, 428);
+            this.btn_funcionarios.Name = "btn_funcionarios";
+            this.btn_funcionarios.Size = new System.Drawing.Size(215, 40);
+            this.btn_funcionarios.TabIndex = 12;
+            this.btn_funcionarios.Text = "Funcionários";
+            this.btn_funcionarios.UseVisualStyleBackColor = false;
             // 
             // frm_inicio
             // 
@@ -263,5 +284,6 @@
         private System.Windows.Forms.Button btn_Receitas;
         private System.Windows.Forms.Panel pan_Conteudo;
         private System.Windows.Forms.Button btn_Inicio;
+        private System.Windows.Forms.Button btn_funcionarios;
     }
 }
