@@ -122,5 +122,35 @@
   <ItemGroup>
     <None Include="Resources\Cópia_de_Cartão_de_Visita-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-down2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-up2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botao-fechar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caxi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cópia de Cartão de Visita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cópia_de_Cartão_de_Visita-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-o-sinal.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

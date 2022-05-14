@@ -16,23 +16,5 @@ namespace nutrisystem1._2
         {
             InitializeComponent();
         }
-
-        private void btn_Fechar_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void btn_Maximizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btn_Minimizar.Visible = true;
-        }
-
-        private void btn_Minimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btn_Minimizar.Visible = false;
-            btn_Maximizar.Visible = true;
-        }
     }
 }
