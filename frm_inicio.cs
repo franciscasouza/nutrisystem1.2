@@ -62,9 +62,9 @@ namespace nutrisystem1._2
             pnl_conteudo.Controls.Clear();
         }
 
-        private void btn_Pacientes_Click_1(object sender, EventArgs e)
+        private void btn_Financeiro_Click(object sender, EventArgs e)
         {
-            timer1.Start();
+            AbrirFormNoPanel<frm_financeiro>();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -91,9 +91,9 @@ namespace nutrisystem1._2
             }
         }
 
-        private void btn_Financeiro_Click(object sender, EventArgs e)
+        private void btnPacientes_Click(object sender, EventArgs e)
         {
-            AbrirFormNoPanel<frm_financeiro>();
+            timer1.Start();
         }
     }
 }
