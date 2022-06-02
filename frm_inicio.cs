@@ -39,6 +39,7 @@ namespace nutrisystem1._2
                 formulario.TopLevel = false;
                 formulario.FormBorderStyle = FormBorderStyle.None;
                 formulario.Dock = DockStyle.Fill;
+                pnl_conteudo.Visible = true;
                 pnl_conteudo.Controls.Add(formulario);
                 pnl_conteudo.Tag = formulario;
                 formulario.Show();
@@ -55,6 +56,12 @@ namespace nutrisystem1._2
             }
         }
 
+        private void btn_Inicio_Click(object sender, EventArgs e)
+        {
+            pnl_conteudo.Visible=false;
+            pnl_conteudo.Controls.Clear();
+        }
+
         private void btn_Pacientes_Click_1(object sender, EventArgs e)
         {
             timer1.Start();
@@ -64,7 +71,7 @@ namespace nutrisystem1._2
         {
             if (isCollapsed)
             {
-                btn_Pacientes.Image = Resources.arrow_up2;
+                btnPacientes.Image = Resources.arrow_up2;
                 panelDropDown.Height += 10;
                 if (panelDropDown.Size == panelDropDown.MaximumSize)
                 {
@@ -74,7 +81,7 @@ namespace nutrisystem1._2
             }
             else
             {
-                btn_Pacientes.Image = Resources.arrow_down2;
+                btnPacientes.Image = Resources.arrow_down2;
                 panelDropDown.Height -= 10;
                 if (panelDropDown.Size == panelDropDown.MinimumSize)
                 {
@@ -86,32 +93,7 @@ namespace nutrisystem1._2
 
         private void btn_Financeiro_Click(object sender, EventArgs e)
         {
-            timer2.Start();
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            if (isCollapsed)
-            {
-                btn_Financeiro.Image = Resources.arrow_up2;
-                panelFinanceiro.Height += 10;
-                if (panelFinanceiro.Size == panelFinanceiro.MaximumSize)
-                {
-                    timer2.Stop();
-                    isCollapsed = false;
-                }
-            }
-            else
-            {
-                btn_Financeiro.Image = Resources.arrow_down2;
-                panelFinanceiro.Height -= 10;
-                if (panelFinanceiro.Size == panelFinanceiro.MinimumSize)
-                {
-                    timer2.Stop();
-                    isCollapsed = true;
-
-                }
-            }
+            AbrirFormNoPanel<frm_financeiro>();
         }
     }
 }
