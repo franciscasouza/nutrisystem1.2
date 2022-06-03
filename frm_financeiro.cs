@@ -16,5 +16,15 @@ namespace nutrisystem1._2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pnl_recibo.Visible=false;
+        }
+
+        private void btn_Inicio_Click(object sender, EventArgs e)
+        {
+            pnl_recibo.Visible = true;
+        }
     }
 }
