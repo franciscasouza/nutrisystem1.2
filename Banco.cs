@@ -10,7 +10,7 @@ namespace nutrisystem1._2
     internal class Banco
     {
         private String host = "localhost";
-        private String nomeBanco = "nutrisystem";
+        private String nomeBanco = "ws_software";
         private String usuario = "root";
         private String senha = "dias004756*";
         private MySqlConnection con;
