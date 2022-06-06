@@ -66,7 +66,7 @@
             this.pictureBox1.Image = global::nutrisystem1._2.Properties.Resources.Cópia_de_Cartão_de_Visita_removebg_preview1;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(211, 191);
+            this.pictureBox1.Size = new System.Drawing.Size(224, 191);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
