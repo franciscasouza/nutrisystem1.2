@@ -95,5 +95,10 @@ namespace nutrisystem1._2
         {
             timer1.Start();
         }
+
+        private void btnNovoPaciente_Click(object sender, EventArgs e)
+        {
+            AbrirFormNoPanel<frm_novopaciente>();
+        }
     }
 }

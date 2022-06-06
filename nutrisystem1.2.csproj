@@ -108,6 +108,12 @@
     <Compile Include="frm_login.Designer.cs">
       <DependentUpon>frm_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_novopaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_novopaciente.Designer.cs">
+      <DependentUpon>frm_novopaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_pacientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_novopaciente.resx">
+      <DependentUpon>frm_novopaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_pacientes.resx">
       <DependentUpon>frm_pacientes.cs</DependentUpon>

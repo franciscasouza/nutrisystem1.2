@@ -26,5 +26,10 @@ namespace nutrisystem1._2
         {
             pnl_recibo.Visible = true;
         }
+
+        private void frm_financeiro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

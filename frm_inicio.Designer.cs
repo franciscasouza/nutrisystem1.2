@@ -101,7 +101,7 @@
             this.panelDropDown.MaximumSize = new System.Drawing.Size(221, 116);
             this.panelDropDown.MinimumSize = new System.Drawing.Size(221, 44);
             this.panelDropDown.Name = "panelDropDown";
-            this.panelDropDown.Size = new System.Drawing.Size(221, 44);
+            this.panelDropDown.Size = new System.Drawing.Size(221, 116);
             this.panelDropDown.TabIndex = 24;
             // 
             // btnPacientes
@@ -142,6 +142,7 @@
             this.btnNovoPaciente.Text = "Novo Paciente";
             this.btnNovoPaciente.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnNovoPaciente.UseVisualStyleBackColor = false;
+            this.btnNovoPaciente.Click += new System.EventHandler(this.btnNovoPaciente_Click);
             // 
             // btnConsultaPaciente
             // 
@@ -187,7 +188,7 @@
             this.btn_Financeiro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Financeiro.ForeColor = System.Drawing.Color.Black;
             this.btn_Financeiro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Financeiro.Location = new System.Drawing.Point(3, 300);
+            this.btn_Financeiro.Location = new System.Drawing.Point(3, 372);
             this.btn_Financeiro.Name = "btn_Financeiro";
             this.btn_Financeiro.Size = new System.Drawing.Size(221, 44);
             this.btn_Financeiro.TabIndex = 15;
@@ -208,7 +209,7 @@
             this.btn_Receitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Receitas.ForeColor = System.Drawing.Color.Black;
             this.btn_Receitas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Receitas.Location = new System.Drawing.Point(3, 350);
+            this.btn_Receitas.Location = new System.Drawing.Point(3, 422);
             this.btn_Receitas.Name = "btn_Receitas";
             this.btn_Receitas.Size = new System.Drawing.Size(221, 44);
             this.btn_Receitas.TabIndex = 21;
