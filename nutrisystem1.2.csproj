@@ -90,6 +90,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Banco.cs" />
+    <Compile Include="Consulta.cs" />
+    <Compile Include="Contato.cs" />
+    <Compile Include="Endereco.cs" />
     <Compile Include="frm_financeiro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,7 +129,10 @@
     <Compile Include="frm_receitas.Designer.cs">
       <DependentUpon>frm_receitas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Paciente.cs" />
+    <Compile Include="Pagamento.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Prontuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_financeiro.resx">
       <DependentUpon>frm_financeiro.cs</DependentUpon>

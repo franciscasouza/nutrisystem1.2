@@ -12,7 +12,8 @@ namespace nutrisystem1._2
         private String host = "localhost";
         private String nomeBanco = "ws_software";
         private String usuario = "root";
-        private String senha = "dias004756*";
+        private String senha = "root";
+        private String porta = "3309";
         private MySqlConnection con;
         private MySqlCommand cmd;
 
@@ -23,7 +24,7 @@ namespace nutrisystem1._2
 
         public void Conectar()
         {
-            String stringCon = "SERVER=" + this.host + ";DATABASE=" + this.nomeBanco + ";UID=" + this.usuario + ";PASSWORD=" + this.senha + ";";
+            String stringCon = "SERVER=" + this.host + ";DATABASE=" + this.nomeBanco + ";UID=" + this.usuario + ";PASSWORD=" + this.senha + "; PORT=" + this.porta + ";";
             this.con = new MySqlConnection(stringCon);
             this.cmd = this.con.CreateCommand();
             this.con.Open();
