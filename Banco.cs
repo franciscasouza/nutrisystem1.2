@@ -29,6 +29,10 @@ namespace nutrisystem1._2
             this.cmd = this.con.CreateCommand();
             this.con.Open();
         }
+        public void Close()
+        {
+            this.con.Close();
+        }
         public void NonQuerry(String sql)
         {
             this.cmd.CommandText = sql;

@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +12,10 @@ namespace nutrisystem1._2
 {
     public partial class frm_novopaciente : Form
     {
-        Paciente paciente = new Paciente();
-        Endereco endereco = new Endereco();
         Contato contato = new Contato();
+        Endereco endereco = new Endereco();
+        Paciente paciente = new Paciente();
+
         public frm_novopaciente()
         {
             InitializeComponent();
@@ -27,6 +27,7 @@ namespace nutrisystem1._2
         }
         private void dtp_datanascimento_ValueChanged(object sender, EventArgs e)
         {
+
             DateTime nascPaciente = dtp_datanascimento.Value;
             DateTime DataAtual = DateTime.Now;
             int Anos = new DateTime(DateTime.Now.Subtract(nascPaciente).Ticks).Year - 1;
@@ -57,6 +58,7 @@ namespace nutrisystem1._2
             {
                 pn_menoridade.Visible = true;
             }
+
         }
         private void btn_inicio_Click(object sender, EventArgs e)
         {
@@ -64,8 +66,7 @@ namespace nutrisystem1._2
             frm_inicio frm = new frm_inicio();
             frm.ShowDialog();
         }
-
-        private void btn_limpar_Click_1(object sender, EventArgs e)
+        private void btn_limpar_Click(object sender, EventArgs e)
         {
             txt_nomecompleto.Clear();
             rdb_fem.Checked = false;
@@ -75,6 +76,9 @@ namespace nutrisystem1._2
             txt_numerodocumento.Clear();
             txt_cpf.Clear();
             txt_responsavelnome.Clear();
+            txt_docresponsavel.Clear();
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
             txt_celular.Clear();
             txt_telefone.Clear();
             txt_email.Clear();
@@ -86,66 +90,16 @@ namespace nutrisystem1._2
             txt_uf.Clear();
 
             pn_menoridade.Visible = false;
+
         }
+
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
-            string gen;
-            try
-            {
-                //ENDERECO
-                paciente.Endereco1 = endereco.Cod_Endereco;
-                this.endereco.TipoLogradouro = txt_tipoEnd.Text;
-                this.endereco.Logradouro = txt_rua.Text;
-                this.endereco.Numero = txt_num_endereco.Text;
-                this.endereco.Bairro = txt_bairro.Text;
-                this.endereco.Complemento = txt_complemento.Text;
-                this.endereco.Cep = txt_cep.Text;
-                this.endereco.Cidade = txt_cidade.Text;
-                this.endereco.Uf = txt_uf.Text;
-                this.endereco.cadastrarEndereco();
+            endereco = paciente.Endereco();
 
-                //CONTATO
-                paciente.Contato1 = contato.Cod_Contato;
-                this.contato.Telefone = txt_telefone.Text;
-                this.contato.Celular = txt_celular.Text;
-                this.contato.Email = txt_email.Text;
-                this.contato.cadastrarContato();
-
-                //PACIENTE
-                DateTimePicker dtNasc = dtp_datanascimento;
-
-                this.paciente.Nome = txt_nomecompleto.Text;
-                this.paciente.Cpf = txt_cpf.Text;
-                this.paciente.TipoDoc = txt_tipodocumento.Text;
-                this.paciente.Rg = txt_numerodocumento.Text;
-                if (rdb_fem.Checked == true)
-                {
-                    gen = "F";
-                    this.paciente.Sexo = gen;
-                }
-                else
-                {
-                    gen = "M";
-                    this.paciente.Sexo = gen;
-                }
-                this.paciente.DataNascimento = dtp_datanascimento.Value.ToString("yyyy-MM-dd");
-                this.paciente.NomeResponsavel = txt_responsavelnome.Text;
-                paciente.cadastrarPaciente();
+            endereco {
+                Bair = txt_bairro
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
-
-        private void rdb_masc_Enter(object sender, EventArgs e)
-        {
-            rdb_masc.Checked = true;
-        }
-
-        private void rdb_fem_Enter(object sender, EventArgs e)
-        {
-            rdb_fem.Checked = true;
         }
     }
 }

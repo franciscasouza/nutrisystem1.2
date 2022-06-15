@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +8,7 @@ namespace nutrisystem1._2
 {
     internal class Endereco
     {
-        private string cod_Endereco;
+        private int cod_Endereco;
         private string tipoLogradouro;
         private string logradouro;
         private string numero;
@@ -18,40 +17,7 @@ namespace nutrisystem1._2
         private string cidade;
         private string uf;
         private string cep;
-        private Banco banco;
 
-        public void atualizarContato()
-        {
-            this.banco.NonQuerry("update endereco set Tipo='" + this.tipoLogradouro + "', Logradouro='" + this.logradouro + "', Numero='" + this.numero + "', Complemento='" + this.complemento + "', Bairro'"
-                + this.bairro + "', Cidade='" + this.cidade + "', UF='" + this.uf + "', CEP='" + this.cep + "' where Cod_Endereco=" + this.cod_Endereco + ";");
-        }
-
-        public void cadastrarContato()
-        {
-            this.banco.NonQuerry("insert into endereco (Tipo, Logradouro, Numero, Complemento, Bairro, Cidade, UF, CEP ) values ('" + this.tipoLogradouro + "', '" + this.Logradouro + "', '"
-                + this.numero + "','" + this.bairro + "','" + this.cidade + "','" + this.uf + "','" + this.cep + "');");
-        }
-
-        public void excluirContato()
-        {
-            this.banco.NonQuerry("delete from endereco where Cod_Endereco=" + this.cod_Endereco + ";");
-        }
-
-        public MySqlDataReader listarUsuarios()
-        {
-            return this.banco.Querry("Select * from endereco order by Cod_Endereco asc");
-        }
-
-        public MySqlDataReader listarUsuarios(String campo, String filtro)
-        {
-            if (filtro == "")
-            {
-                return listarUsuarios();
-            }
-            return this.banco.Querry("Select * from endereco where " + campo + " = '" + filtro + "' order by Cod_Endereco asc");
-        }
-
-        public string Cod_Endereco { get => cod_Endereco; set => cod_Endereco = value; }
         public string TipoLogradouro { get => tipoLogradouro; set => tipoLogradouro = value; }
         public string Logradouro { get => logradouro; set => logradouro = value; }
         public string Numero { get => numero; set => numero = value; }
@@ -60,5 +26,26 @@ namespace nutrisystem1._2
         public string Cidade { get => cidade; set => cidade = value; }
         public string Uf { get => uf; set => uf = value; }
         public string Cep { get => cep; set => cep = value; }
+        public int Cod_Endereco { get => cod_Endereco; set => cod_Endereco = value; }
+
+        private Banco banco;
+
+        public Endereco()
+        {
+            this.banco = new Banco();
+        }
+
+        public void cadastrarEndereco()
+        {
+            MySqlDataReader reader;
+            this.banco.Conectar();
+            this.banco.NonQuerry("insert into endereco (Tipo, Logradouro, Numero, Complemento, Bairro, Cidade, UF, CEP) values ('" + this.tipoLogradouro + "', '" + this.logradouro + "', '" + this.numero + "','" + this.complemento + "','" + this.bairro + "','" + this.cidade + "','" + this.uf + "','" + this.cep + "');");
+            reader = this.banco.Querry("select Cod_Endereco from endereco where CEP = '" + this.cep + "' and Logradouro = '" + this.logradouro +
+                "' and Numero = '" + this.numero + "' and Bairro = '" + this.bairro + "' and Uf = '" + this.uf + "' and Cidade = '" + this.cidade + "';");
+            reader.Read();
+            int endereco = reader.GetInt32(0);
+            this.banco.Close();
+            this.cod_Endereco = endereco;
+        }
     }
 }

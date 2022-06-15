@@ -39,6 +39,7 @@ namespace nutrisystem1._2
                 formulario.TopLevel = false;
                 formulario.FormBorderStyle = FormBorderStyle.None;
                 formulario.Dock = DockStyle.Fill;
+                pnl_conteudo.Dock = DockStyle.Fill;
                 pnl_conteudo.Visible = true;
                 pnl_conteudo.Controls.Add(formulario);
                 pnl_conteudo.Tag = formulario;
@@ -64,6 +65,7 @@ namespace nutrisystem1._2
 
         private void btn_Financeiro_Click(object sender, EventArgs e)
         {
+            pnl_conteudo.Controls.Clear();
             AbrirFormNoPanel<frm_financeiro>();
         }
 
@@ -98,7 +100,13 @@ namespace nutrisystem1._2
 
         private void btnNovoPaciente_Click(object sender, EventArgs e)
         {
+            pnl_conteudo.Controls.Clear();
             AbrirFormNoPanel<frm_novopaciente>();
+        }
+
+        private void frm_inicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

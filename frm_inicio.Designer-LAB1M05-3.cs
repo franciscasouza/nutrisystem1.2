@@ -219,7 +219,6 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frm_inicio";
             this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "NutriSystem";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
